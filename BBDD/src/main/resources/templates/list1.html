@@ -26,14 +26,14 @@
 				</tr>
 			</thead>
 			<tbody>
-				<tr th:each="usuario : ${usuarios}">
-					<td th:text=" ${usuario.nombre}"></td>
-					<td th:text=" ${usuario.apellidos}"></td>
-					<td th:text=" ${usuario.telefono}"></td>
-					<td th:text=" ${usuario.correo}"></td>
-					<td><a th:href="@{/users/usuario/{id}(id=${usuario.id})}" class="btn btn-info">ver</a></td>
-					<td><a th:href="@{/users/editar/{id}(id=${usuario.id})}" class="btn btn-info">editar</a></td>
-					<td><a th:href="@{/users/deleteUsuario/{id}(id=${usuario.id})}" class="btn btn-danger">borrar</a>
+				<tr th:each="Usuario : ${usuarios}">
+					<td th:text=" ${Usuario.nombre}"></td>
+					<td th:text=" ${Usuario.apellidos}"></td>
+					<td th:text=" ${Usuario.telefono}"></td>
+					<td th:text=" ${Usuario.correo}"></td>
+					<td><a th:href="@{/users/usuario/{id}(id=${Usuario.id})}" class="btn btn-info">ver</a></td>
+					<td><a th:href="@{/users/editar/{id}(id=${Usuario.id})}" class="btn btn-info">editar</a></td>
+					<td><a th:href="@{/users/deleteUsuario/{id}(id=${Usuario.id})}" class="btn btn-danger">borrar</a>
 					</td>
 				</tr>
 			</tbody>
@@ -56,6 +56,7 @@
 					</ul>
 				</nav>
 			</div>
+			<div class="col-md2"></div>
 		</div>
 	</div>
 	<div class="container">
